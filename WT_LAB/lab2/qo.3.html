@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>India Image Map</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        img {
+            border: 3px solid black;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Map of India</h1>
+
+    <p>Click on a state to view its information.</p>
+
+    <!-- India Map Image -->
+    <img src="india-map.jpg"
+         alt="Map of India"
+         usemap="#indiamap"
+         width="600">
+
+    <!-- Image Map -->
+    <map name="indiamap">
+
+        <!-- Rajasthan -->
+        <area shape="rect"
+              coords="180,250,280,340"
+              href="states/rajasthan.html"
+              alt="Rajasthan">
+
+        <!-- Punjab -->
+        <area shape="rect"
+              coords="250,130,310,180"
+              href="states/punjab.html"
+              alt="Punjab">
+
+        <!-- Haryana -->
+        <area shape="rect"
+              coords="250,180,310,230"
+              href="states/haryana.html"
+              alt="Haryana">
+
+        <!-- Gujarat -->
+        <area shape="rect"
+              coords="100,300,200,390"
+              href="states/gujarat.html"
+              alt="Gujarat">
+
+        <!-- Maharashtra -->
+        <area shape="rect"
+              coords="180,390,300,470"
+              href="states/maharashtra.html"
+              alt="Maharashtra">
+
+    </map>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+.logo p {
+    font-size: 14px;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background-color: #00509e;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #ffd700;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+}
+
+
+/* Common Section */
+
+section {
+    padding: 50px 10%;
+}
+
+section h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+
+/* About */
+
+.content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.card h3 {
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+
+/* Facilities */
+
+.facilities {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.facilities div {
+    background-color: white;
+    padding: 25px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.facilities h3 {
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+
+/* Contact */
+
+#contact {
+    background-color: #e8eef5;
+    text-align: center;
+}
+
+address {
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards,
+    .facilities {
+        flex-direction: column;
+    }
+
+    .card,
+    .facilities div {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+/* Hero Section */
+
+.hero {
+    min-height: 500px;
+
+    background-image:
+        linear-gradient(rgba(0, 40, 80, 0.70),
+                        rgba(0, 40, 80, 0.70)),
+        url("https://ctp.nitj.ac.in/_DSC0031.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 80px 10%;
+}
+
+.hero h2 {
+    font-size: 45px;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #ffd700;
+    color: #003366;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+}

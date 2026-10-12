@@ -1,0 +1,62 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f4f6f8;color:#222;line-height:1.6}
+header{background:#003b70;color:white}
+.header-content{padding:22px 7%}
+.header-content h1{font-size:32px}
+.header-content p{font-size:16px}
+nav{background:#002b52;display:flex;justify-content:center;gap:35px;padding:15px}
+nav a{color:white;text-decoration:none;font-weight:bold}
+nav a:hover{color:#ffd700}
+
+.hero{
+min-height:480px;
+background-image:linear-gradient(rgba(0,45,90,.65),rgba(0,45,90,.65)),url("https://ctp.nitj.ac.in/_DSC0031.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white
+}
+.hero-content{max-width:800px;padding:30px}
+.hero h2{font-size:45px;margin-bottom:20px}
+.hero p{font-size:19px;margin-bottom:30px}
+button{background:#ffd700;color:#003b70;border:0;border-radius:5px;padding:13px 25px;font-size:16px;font-weight:bold;cursor:pointer}
+button:hover{background:white}
+
+.container{width:85%;max-width:1200px;margin:auto;padding:55px 0}
+.container>h2{text-align:center;color:#003b70;font-size:30px;margin-bottom:30px}
+.about{background:white;padding:30px;border-radius:10px;box-shadow:0 3px 12px #ddd}
+.about h2{color:#003b70;margin-bottom:15px}
+aside{margin-top:25px;background:#e5eef7;padding:25px;border-left:5px solid #003b70;border-radius:5px}
+aside h3{color:#003b70;margin-bottom:10px}
+aside ul{list-style-position:inside}
+
+figure{text-align:center}
+figure img{width:100%;max-width:1000px;border-radius:10px;box-shadow:0 5px 15px #bbb}
+figcaption{margin-top:10px;font-style:italic;color:#555}
+
+.cards{display:flex;gap:25px;justify-content:center}
+.card{background:white;padding:25px;flex:1;border-radius:10px;box-shadow:0 3px 12px #ddd}
+.card h3{color:#00509e;margin-bottom:12px}
+progress,meter{width:100%;height:20px;margin-top:10px}
+
+.event{background:white;padding:25px;margin-bottom:20px;border-left:5px solid #00509e;border-radius:5px;box-shadow:0 2px 8px #ddd}
+.event h3{color:#003b70}
+details{background:white;padding:20px;border-radius:8px;box-shadow:0 2px 8px #ddd}
+summary{color:#003b70;font-weight:bold;cursor:pointer;font-size:18px}
+details p{margin-top:15px}
+
+.contact{background:#e5eef7;text-align:center;padding:50px}
+.contact h2{color:#003b70;margin-bottom:20px}
+address{font-style:normal}
+address a{color:#00509e}
+footer{background:#003b70;color:white;text-align:center;padding:20px}
+
+@media(max-width:768px){
+nav{flex-direction:column;align-items:center;gap:10px}
+.hero h2{font-size:32px}
+.cards{flex-direction:column}
+.container{width:90%}
+}
